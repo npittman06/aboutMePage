@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nathan Pittman Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f0f10;
+      --card: #1e1e22;
+      --text: #ffffff;
+      --muted: #cfcfcf;
+      --accent: #3b82f6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .navbar {
+      background: #000;
+    }
+
+    .nav-link, .navbar-brand {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      color: var(--accent) !important;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 15px;
+    }
+
+    .about-box {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .skill-box {
+      background: var(--card);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .badge-skill {
+      background: #2a2a2e;
+      margin: 5px;
+      padding: 6px 12px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+
+    .project-card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 8px;
+      height: 100%;
+    }
+
+    .btn-custom {
+      background: var(--accent);
+      color: white;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background: #2563eb;
+    }
+
+    .contact-box {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      background: #2a2a2e !important;
+      color: white !important;
+      border: none !important;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: var(--muted);
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 22px;
+    }
+
+    .social-icons a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Nathan Pittman</a>
+
+    <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">
+      ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="about">
+  <img src="profile.jpg" alt="Photo of Nathan Pittman" class="profile-img">
+
+  <h1>Nathan Pittman</h1>
+  <p class="text-secondary">Aspiring Web Developer</p>
+
+  <div class="about-box">
+    <p>
+      My name is Nathan Pittman, and I’m from San Francisco, California. I’m currently building my technical
+      skills in C++, HTML, and JavaScript while bringing strong communication, teamwork, and motivation to everything I do.
+    </p>
+    <p>
+      When I was introduced to the Dev/Mission Pre-Apprenticeship program, I immediately recognized it as an opportunity I wanted to pursue.
+      My experience so far has been incredible—I’ve already built three webpages using HTML, and I’m excited to continue growing,
+      learning, and applying my skills in real-world projects.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container text-center">
+    <h3 class="mb-4">Skills</h3>
+
+    <div class="row justify-content-center g-3">
+      <div class="col-md-4">
+        <div class="skill-box">
+          <h6>Technical</h6>
+          <span class="badge-skill">HTML</span>
+          <span class="badge-skill">CSS</span>
+          <span class="badge-skill">C++</span>
+          <span class="badge-skill">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="skill-box">
+          <h6>Soft Skills</h6>
+          <span class="badge-skill">Communication</span>
+          <span class="badge-skill">Teamwork</span>
+          <span class="badge-skill">Public Speaking</span>
+          <span class="badge-skill">Critical Thinking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h3 class="text-center mb-4">Projects</h3>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Lyrics Page</h6>
+          <p>A webpage for "Us Placers". One of my first HTML projects.</p>
+          <a href="#" class="btn btn-custom btn-sm">View</a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Keyboard Piano</h6>
+          <p>A virtual piano project inspired by Kanye West. Still in progress.</p>
+          <a href="#" class="btn btn-custom btn-sm">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container text-center">
+    <h3 class="mb-4">Contact Me</h3>
+
+    <div class="contact-box">
+      <input class="form-control mb-3" placeholder="Your Name">
+      <input class="form-control mb-3" placeholder="Your Email">
+      <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
+      <button class="btn btn-custom w-100">Send</button>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="social-icons mb-2">
+    <a href="https://github.com/npittman06" target="_blank"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/nathanpittman006/" target="_blank"><i class="bi bi-linkedin"></i></a>
+  </div>
+  <p>San Francisco, California</p>
+  <p>&copy; 2026 Nathan Pittman</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
